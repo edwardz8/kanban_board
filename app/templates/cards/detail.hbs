@@ -1,1 +1,13 @@
-{{outlet}}
+
+<div class="modal">
+  <div class="modal-card">
+    <h3>Edit</h3>
+
+    {{edit-card-form title=(readonly model.title) list=(readonly model.title) onsubmit=(action "updateCard")}}
+
+
+      <div class="modal-card-footer">
+        <button type="button" class="btn btn-delete" onclick={{action "deleteCard"}}>Delete Card</button>
+      </div>
+  </div>
+</div>
